@@ -1,5 +1,3 @@
-import { fontFamily } from 'tailwindcss/defaultTheme';
-
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -13,12 +11,9 @@ export default {
         accent: '#21C2F8',
         background: '#f5f6fa',
         white: '#FFFFFF',
-        text: {
-          DEFAULT: '#0037bf',
-          primary: '#0037bf',
-          secondary: '#0037bf99', // 60%
-          tertiary: '#0037bf66', // 40%
-        },
+        textPrimary: '#0037bf',
+        textSecondary: '#0037bf99',
+        textTertiary: '#0037bf66',
         gray: {
           50: '#f5f6fa',
           100: '#f1f1f1',
@@ -44,7 +39,8 @@ export default {
         },
       },
       fontFamily: {
-        inter: ['Inter', ...fontFamily.sans],
+        sans: ['ui-sans-serif', 'system-ui', 'sans-serif'],
+        inter: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
         card: '0 4px 24px 0 rgba(0, 55, 191, 0.08)',
@@ -59,4 +55,16 @@ export default {
     },
   },
   plugins: [require('@tailwindcss/forms')],
+  safelist: [
+    'font-sans',
+    'bg-background',
+    'text-primary',
+    'text-secondary',
+    'text-tertiary',
+    'bg-primary',
+    'bg-accent',
+    'input-base',
+    'btn-primary',
+    // add any other custom classes you use in @apply or in your CSS
+  ],
 }; 

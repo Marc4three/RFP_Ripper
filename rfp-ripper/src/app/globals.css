@@ -14,12 +14,10 @@
 
 @layer base {
   html {
-    font-family: 'Inter', theme('fontFamily.sans');
-    background-color: theme('colors.background');
-    color: theme('colors.text.primary');
+    @apply font-sans bg-background text-primary;
   }
   body {
-    @apply bg-background text-text-primary font-inter;
+    @apply bg-background text-primary font-sans;
   }
 }
 
@@ -54,12 +52,6 @@
   .fade-in {
     @apply opacity-0 animate-fadeIn;
   }
-}
-
-@layer utilities {
-  .text-primary { color: theme('colors.text.primary'); }
-  .text-secondary { color: theme('colors.text.secondary'); }
-  .text-tertiary { color: theme('colors.text.tertiary'); }
 }
 
 @keyframes fadeIn {
