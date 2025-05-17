@@ -72,20 +72,20 @@ const Solution = () => {
             Estimated development time: 8-12 weeks
           </p>
           <div className="flex justify-center gap-6">
-            <div className="card min-w-[120px] transition-all duration-200 cursor-pointer"
+            <motion.div className="card min-w-[120px] transition-all duration-200 cursor-pointer"
               whileHover={{ scale: 1.06, boxShadow: '0 0 32px #21C2F8aa' }}
               whileTap={{ scale: 0.98 }}
             >
               <div className="text-2xl font-bold text-accent">8</div>
               <div className="text-sm text-secondary">Weeks</div>
-            </div>
-            <div className="card min-w-[120px] transition-all duration-200 cursor-pointer"
+            </motion.div>
+            <motion.div className="card min-w-[120px] transition-all duration-200 cursor-pointer"
               whileHover={{ scale: 1.06, boxShadow: '0 0 32px #21C2F8aa' }}
               whileTap={{ scale: 0.98 }}
             >
               <div className="text-2xl font-bold text-accent">12</div>
               <div className="text-sm text-secondary">Weeks</div>
-            </div>
+            </motion.div>
           </div>
         </motion.div>
       </div>
