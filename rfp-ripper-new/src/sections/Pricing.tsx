@@ -45,6 +45,7 @@ const Pricing = () => {
         <SectionHeader
           title="Investment"
           subtitle="A structured payment plan designed for consistent delivery and cash flow management"
+          subtitleClassName="text-white"
         />
         <div className="grid md:grid-cols-3 gap-6 mb-12">
           {pricingData.map((month, index) => (

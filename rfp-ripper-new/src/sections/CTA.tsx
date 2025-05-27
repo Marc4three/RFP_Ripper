@@ -25,16 +25,22 @@ const CTA = () => {
           <div className="flex flex-col md:flex-row items-center justify-between mb-8 gap-6">
             <div className="w-32 h-8 mb-4 md:mb-0">
               <img
-                src="/logos/P5TSLogo.png"
+                src="/P5TSLogo.png"
                 alt="P5 Tech Solutions"
                 className="object-contain w-full h-full"
+                onError={(e) => {
+                  e.currentTarget.src = "/p5techsolutions.svg";
+                }}
               />
             </div>
             <div className="w-32 h-8">
               <img
-                src="/logos/Vatortechlogo.png"
+                src="/Vatortechlogo.png"
                 alt="Vatortech"
                 className="object-contain w-full h-full"
+                onError={(e) => {
+                  e.currentTarget.src = "/vatortech.svg";
+                }}
               />
             </div>
           </div>

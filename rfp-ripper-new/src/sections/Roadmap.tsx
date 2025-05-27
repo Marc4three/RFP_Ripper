@@ -88,6 +88,24 @@ const Roadmap = () => {
             Phase 2 features will be developed based on user feedback and business needs. Timeline and pricing for Phase 2 will be determined after successful completion of Phase 1.
           </p>
         </motion.div>
+
+        {/* Phase 2 Cost Information */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.8 }}
+          whileHover={{ scale: 1.06, boxShadow: '0 0 32px #21C2F8aa' }}
+          whileTap={{ scale: 0.98 }}
+          className="card max-w-3xl mx-auto text-center transition-all duration-200 cursor-pointer mt-8"
+        >
+          <h3 className="text-xl font-bold text-primary mb-2">Phase 2 Estimated Cost</h3>
+          <div className="text-4xl font-bold text-accent mb-4">$30,000 – $35,000</div>
+          <p className="text-secondary">
+            This investment covers the development of advanced features including AI-powered document analysis,
+            automated proposal generation, and integration with additional business systems.
+          </p>
+        </motion.div>
       </div>
     </section>
   );

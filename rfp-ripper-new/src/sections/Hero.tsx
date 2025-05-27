@@ -16,23 +16,27 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-12 mb-12"
         >
-          <motion.img
-            src="/logos/P5TSLogo.png"
-            alt="P5TechSolutions"
-            className="object-contain w-56 h-24 drop-shadow-[0_0_32px_#21C2F8aa]"
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          />
+          <motion.div className="relative w-56 h-24">
+            <img
+              src="/P5TSLogo.png"
+              alt="P5TechSolutions"
+              className="object-contain w-full h-full"
+              onError={(e) => {
+                e.currentTarget.src = "/p5techsolutions.svg";
+              }}
+            />
+          </motion.div>
           <span className="text-4xl font-extrabold text-white/60 mx-6 hidden sm:inline-block">×</span>
-          <motion.img
-            src="/logos/Vatortechlogo.png"
-            alt="Vatortech"
-            className="object-contain w-56 h-24 drop-shadow-[0_0_32px_#21C2F8aa]"
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          />
+          <motion.div className="relative w-56 h-24">
+            <img
+              src="/Vatortechlogo.png"
+              alt="Vatortech"
+              className="object-contain w-full h-full"
+              onError={(e) => {
+                e.currentTarget.src = "/vatortech.svg";
+              }}
+            />
+          </motion.div>
         </motion.div>
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
