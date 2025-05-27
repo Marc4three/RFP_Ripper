@@ -5,7 +5,6 @@ import Solution from './sections/Solution';
 import Scope from './sections/Scope';
 import Pricing from './sections/Pricing';
 import Roadmap from './sections/Roadmap';
-import Phase2Overview from './sections/Phase2Overview';
 import TechStack from './sections/TechStack';
 import CTA from './sections/CTA';
 import SectionDivider from './components/SectionDivider';

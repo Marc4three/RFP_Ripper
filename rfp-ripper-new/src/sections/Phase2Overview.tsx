@@ -1,5 +1,4 @@
 import SectionHeader from '../components/SectionHeader';
-import { motion } from 'framer-motion';
 
 const Phase2Overview = () => {
   return (

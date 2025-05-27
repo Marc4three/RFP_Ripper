@@ -10,8 +10,6 @@ const CRMPricing = () => {
         <SectionHeader
           title="Investment"
           subtitle="Preferred client rate for Phase 2 development"
-          titleClassName="text-6xl md:text-7xl font-extrabold text-center mb-4 text-accent drop-shadow-[0_2px_32px_#21C2F8aa]"
-          subtitleClassName="text-2xl md:text-3xl text-center text-white/80 mb-12"
         />
         <div className="bg-white rounded-2xl shadow-lg p-8 max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-accent mb-6">Phase 2 Investment</h2>

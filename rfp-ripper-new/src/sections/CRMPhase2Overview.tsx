@@ -1,5 +1,4 @@
 import SectionHeader from '../components/SectionHeader';
-import { motion } from 'framer-motion';
 
 const CRMPhase2Overview = () => {
   return (
